@@ -17,6 +17,7 @@ import EventsCaliTwo from './components/EventsCaliTwo.tsx';
 import EventsCaliTree from './components/EventsCaliTree.tsx';
 import EventsCaliFour from './components/EventsCaliFour.tsx';
 import EventsCaliFive from './components/EventsCaliFive.tsx';
+import {SafeAreaView} from 'react-native-safe-area-context';
 
 const EventsDetailCaliScreen = (): React.JSX.Element => {
   const {
@@ -42,10 +43,10 @@ const EventsDetailCaliScreen = (): React.JSX.Element => {
   };
 
   return (
-    <View style={[styles.container, iconName === 'eventsTint4' || iconName === 'eventsTint5' ? { backgroundColor: Colors.transparent } : { backgroundColor: Colors.yellowButton }]}>
+    <SafeAreaView edges={['top']} style={[styles.container, iconName === 'eventsTint4' || iconName === 'eventsTint5' ? { backgroundColor: Colors.transparent } : { backgroundColor: Colors.yellowButton }]}>
       <TouchableOpacity style={{ backgroundColor: iconName === 'eventsTint4' || iconName === 'eventsTint5' ? Colors.yellowButton : Colors.transparent }} onPress={() => Navigation.pop()} activeOpacity={1}>
         <IconComponent
-          style={{ width: 20, height: 20, marginTop: 80, marginLeft: 20, marginBottom: 20, }}
+          style={{ width: 20, height: 20, marginLeft: 20, marginBottom: Platform.OS === 'ios' ? 20 : 0 }}
           icon={'backTint'}
         />
       </TouchableOpacity>
@@ -60,7 +61,7 @@ const EventsDetailCaliScreen = (): React.JSX.Element => {
         icon={iconName as IconTypes}
       />
       {renderView()}
-    </View>
+    </SafeAreaView>
   );
 };
 const styles = StyleSheet.create({
