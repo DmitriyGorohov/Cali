@@ -58,10 +58,10 @@ const KarzinaScreen = (): React.JSX.Element => {
                 style={styles.itemImage}
               />
               <View style={styles.itemDetailsContainer}>
-                <Text numberOfLines={1} style={styles.itemTitle}>
+                <Text numberOfLines={2} style={styles.itemTitle}>
                   {item.product.name}
                 </Text>
-                <Text numberOfLines={1} style={styles.itemDescription}>
+                <Text numberOfLines={3} style={styles.itemDescription}>
                   {item.product.description}
                 </Text>
                 <View style={styles.itemFooter}>
@@ -157,17 +157,17 @@ const styles = StyleSheet.create({
   flatListContent: {
     paddingTop: 20,
     flexGrow: 1,
-    paddingHorizontal: 16,
+    paddingHorizontal: 36,
   },
   itemContainer: {
-    width: '60%',
+    width: '100%',
     borderColor: Colors.yellowButton,
     marginBottom: 16,
     overflow: 'hidden',
   },
   itemImage: {
     width: '100%',
-    height: 120,
+    height: 180,
     borderRadius: 20,
   },
   itemDetailsContainer: {
@@ -177,13 +177,14 @@ const styles = StyleSheet.create({
   },
   itemTitle: {
     color: Colors.black,
-    fontSize: 16,
+    fontSize: 22,
     fontWeight: '800',
     marginBottom: 6,
   },
   itemDescription: {
     color: 'gray',
-    fontSize: 8,
+    fontSize: 16,
+    fontWeight: '500',
     marginBottom: 4,
     flex: 1,
   },
@@ -195,7 +196,7 @@ const styles = StyleSheet.create({
   },
   priceContainer: {
     padding: 6,
-    paddingHorizontal: 8,
+    paddingHorizontal: 14,
     borderRadius: 20,
     backgroundColor: Colors.yellowButton,
   },

@@ -26,7 +26,7 @@ const ReserveCaliScreen = (): React.JSX.Element => {
       <View style={{ flex: 1, backgroundColor: Colors.white }}>
         <Header />
         <KeyboardView isScroll scrollViewStyle={{ paddingBottom: 50, paddingHorizontal: 16 }}>
-          <Text style={{ color: Colors.black, fontSize: 22, fontWeight: '500', paddingHorizontal: 16 }}>Реезрв столика</Text>
+          <Text style={{ color: Colors.black, fontSize: 22, fontWeight: '500', paddingHorizontal: 16 }}>Резерв столика</Text>
           <View
             style={{
               flex: 1,
