@@ -9,19 +9,19 @@ export interface Product {
   description: string;
 }
 
-export const drinks: Product[] = [
+export const soupItems: Product[] = [
   {
     id: 1,
-    name: 'Ароматный кофе',
-    image: require('../assets/drink-1/drink-1.png'),
+    name: 'Крем-суп из белых грибов',
+    image: require('../assets/cali/soup-1/soup-1.png'),
     price: 15,
     category: 'Напитки',
     description: 'Эспрессо, американо, капучино, латте.',
   },
   {
     id: 2,
-    name: 'Горячий шоколад',
-    image: require('../assets/drink-2/drink-2.png'),
+    name: 'Бульон с трюфельными пельменями',
+    image: require('../assets/cali/soup-2/soup-2.png'),
     price: 10,
     category: 'Напитки',
     description:
@@ -29,16 +29,16 @@ export const drinks: Product[] = [
   },
   {
     id: 3,
-    name: 'Фреш-напитки',
-    image: require('../assets/drink-3/drink-2.png'),
+    name: 'Том Ям с морепродуктами',
+    image: require('../assets/cali/soup-3/soup-3.png'),
     price: 10,
     category: 'Напитки',
     description: 'Свежевыжатые соки: апельсин, яблоко, грейпфрут.',
   },
   {
     id: 4,
-    name: 'Матча латте',
-    image: require('../assets/drink-4/drink-4.png'),
+    name: 'Консомме с фуа-гра ',
+    image: require('../assets/cali/soup-4/soup-4.png'),
     price: 20,
     category: 'Напитки',
     description:
@@ -46,107 +46,107 @@ export const drinks: Product[] = [
   },
 ];
 
-export const fruitCakes: Product[] = [
+export const dishItems: Product[] = [
   {
     id: 5,
-    name: 'Торт "Лесная ягода"',
+    name: 'Стейк Рибай с трюфельным маслом ',
     description: 'Нежный бисквит с ягодами муссом и свежими ягодами.',
     price: 50,
     category: 'Фруктовые торты',
-    image: require('../assets/frukt-1/frukt-1.png'),
+    image: require('../assets/cali/dish-1/dish-1.png'),
   },
   {
     id: 6,
-    name: 'Муссовый торт "Манго"',
+    name: 'Ризотто с белыми трюфелями ',
     description: 'Лёгкий мусс с тропическими фруктами на бисквитной основе.',
     price: 40,
     category: 'Фруктовые торты',
-    image: require('../assets/frukt-2/frukt-2.png'),
+    image: require('../assets/cali/dish-2/dish-2.png'),
   },
   {
     id: 7,
-    name: 'Торт "Павлова"',
+    name: 'Тушеный телячий ванг с картофельным пюре',
     description: 'Воздушный безе с абрикосами и свежими ягодами.',
     price: 35,
     category: 'Фруктовые торты',
-    image: require('../assets/frukt-3/frukt-3.png'),
+    image: require('../assets/cali/dish-3/dish-3.png'),
   },
   {
     id: 8,
-    name: 'Торт "Лимонный рай"',
+    name: 'Морской окунь в соленой корочке ',
     description: 'Лёгкое тесто с лимонным кремом и меренгой.',
     price: 45,
     category: 'Фруктовые торты',
-    image: require('../assets/frukt-4/frukt-4.png'),
+    image: require('../assets/cali/dish-4/dish-4.png'),
   },
 ];
 
-export const classicCakes: Product[] = [
+export const coldItems: Product[] = [
   {
     id: 9,
     name: 'Наполеон',
     description: 'Слоёный торт с нежным кремом и лёгкой кислинкой.',
     price: 20,
-    category: 'Классические торты',
-    image: require('../assets/tort-1/tort-1.png'),
+    category: 'Карпаччо из мраморной говядины',
+    image: require('../assets/cali/cold-1/cold-1.png'),
   },
   {
     id: 10,
-    name: 'Медовик',
+    name: 'Тартар из тунца ',
     description: 'Многослойный медовый торт с кремом.',
     price: 20,
     category: 'Классические торты',
-    image: require('../assets/tort-2/tort-2.png'),
+    image: require('../assets/cali/cold-2/cold-2.png'),
   },
   {
     id: 11,
-    name: 'Шоколадный торт',
+    name: 'Цезарь с лангустинами',
     description: 'Глубокий шоколадный вкус с орехами и сливками.',
     price: 55,
     category: 'Классические торты',
-    image: require('../assets/tort-3/tort-3.png'),
+    image: require('../assets/cali/cold-3/cold-3.png'),
   },
   {
     id: 12,
-    name: 'Тирамису',
+    name: 'Фуа-гра на поджаренном бриоше',
     description: 'Итальянский десерт с маскарпоне.',
     price: 45,
     category: 'Классические торты',
-    image: require('../assets/tort-3/tort-3.png'),
+    image: require('../assets/cali/cold-4/cold-4.png'),
   },
 ];
 
 export const desserts: Product[] = [
   {
     id: 13,
-    name: 'Макарун',
+    name: 'Шоколадный фондан с мороженым',
     description: 'Разнообразие вкусов от клубники до солёной карамели.',
     price: 10,
     category: 'Десерты и сладости',
-    image: require('../assets/desert-1/desert-1.png'),
+    image: require('../assets/cali/desert-1/desert-1.png'),
   },
   {
     id: 14,
-    name: 'Эклеры',
+    name: 'Крем брюле с мадагаскарской ванилью',
     description: 'Традиционные эклеры с шоколадным кремом.',
     price: 15,
     category: 'Десерты и сладости',
-    image: require('../assets/desert-2/desert-2.png'),
+    image: require('../assets/cali/desert-2/desert-2.png'),
   },
   {
     id: 15,
-    name: 'Капкейки',
+    name: 'Тирамису De Luxe',
     description: 'Мини-тортики с различными вкусами.',
     price: 20,
     category: 'Десерты и сладости',
-    image: require('../assets/desert-3/desert-3.png'),
+    image: require('../assets/cali/desert-3/desert-3.png'),
   },
   {
     id: 16,
-    name: 'Трюфели',
+    name: 'Панна котта с малиновым соусом',
     description: 'Шоколадные трюфели с начинками.',
     price: 45,
     category: 'Десерты и сладости',
-    image: require('../assets/desert-4/desert-4.png'),
+    image: require('../assets/cali/desert-4/desert-4.png'),
   },
 ];

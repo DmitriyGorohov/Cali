@@ -1,6 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { RootState } from '../store.ts';
-import {Burger} from '../../utils/common.ts';
 import {Product} from '../../utils/commonLists.ts';
 
 export const shopMyBookSelector = (state: RootState): ShopState => state.shop;
@@ -8,13 +7,13 @@ export const shopMyBookSelector = (state: RootState): ShopState => state.shop;
 export interface ShopState {
     totalCount: number;
     itemsCart: { product: Product; quantity: number }[];
-    burgers: Product[];
+    items: Product[];
 }
 
 const initialState: ShopState = {
     totalCount: 0,
     itemsCart: [],
-    burgers: [],
+    items: [],
 };
 
 const shopTintSlice = createSlice({
@@ -59,7 +58,7 @@ const shopTintSlice = createSlice({
             }
         },
         visibleBurgers: (state, action: PayloadAction<Product[]>) => {
-            state.burgers = action.payload;
+            state.items = action.payload;
         },
         removeProductFromCart: (state, action: PayloadAction<number>) => {
             const productId = action.payload;

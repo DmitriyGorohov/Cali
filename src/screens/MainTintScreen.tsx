@@ -1,8 +1,7 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import Colors from '../styles/Colors.ts';
-import { Screen } from '../components/base/Screen.tsx';
 import { IconComponent } from '../components/icon/IconComponent.tsx';
-import { tintMainList } from '../utils/common.ts';
+import { caliList } from '../utils/common.ts';
 import Screens from '../navigation/consts/screens.ts';
 import Navigation from '../navigation/navigation.ts';
 import {SafeAreaView} from 'react-native-safe-area-context';
@@ -15,7 +14,7 @@ const MainTintScreen = (): React.JSX.Element => {
     <SafeAreaView style={{ backgroundColor: Colors.black, flex: 1, alignItems: 'center' }}>
       <IconComponent style={{ width: 200, height: 150 }} icon="logoCali" />
       <View style={{ paddingHorizontal: 56, marginBottom: 34, paddingTop: 32, width: '100%' }}>
-        {tintMainList.map((item) => {
+        {caliList.map((item) => {
           return (
             <TouchableOpacity
               onPress={() => handleNavigate(item.screen)}
